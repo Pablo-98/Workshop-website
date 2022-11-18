@@ -1,28 +1,31 @@
+import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 
 
 import Container from 'react-bootstrap/Container';
 import BasicExample from './components/Navbar/Navbar';
+
+import car from './Assets/sample.jpg'
 
 import './App.css';
 
 
 
 
-function App() {
-  return(
+class App extends Component{
+  render(){
+    return(
 
 
 
 
-  <Container className="p-1" >
+  <Container className="p-1" styles={{ backgroundImage: `url(${car})`}} >
     <BasicExample>
 
     </BasicExample>
   </Container>
 );
-}
-
-export default App;
+    }
+  }
+  export default App
