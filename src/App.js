@@ -8,6 +8,8 @@ import BasicExample from './components/Navbar/Navbar';
 
 import './App.css';
 
+import Main from './components/Main/Main';
+
 
 
 const App = () => (
@@ -15,6 +17,7 @@ const App = () => (
 
 
   <Container className="p-3">
+    <Main />
     <BasicExample id="navbar">
 
     </BasicExample>
