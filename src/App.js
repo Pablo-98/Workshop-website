@@ -8,22 +8,21 @@ import BasicExample from './components/Navbar/Navbar';
 
 import './App.css';
 
-import Main from './components/Main/Main';
 
 
 
-const App = () => (
+function App() {
+  return(
 
 
 
-  <Container className="p-3">
-    <Main />
-    <BasicExample id="navbar">
+
+  <Container className="p-1" >
+    <BasicExample>
 
     </BasicExample>
-    
-      <h1 className="header">Coding doesnt have to be hard</h1>
-      </Container>
+  </Container>
 );
+}
 
 export default App;
